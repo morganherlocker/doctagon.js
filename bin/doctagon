@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var program = require('commander'),
+  doctagon = require('../');
+
+program
+  .version('0.1')
+  .option('-o --out [type]', 'path of the output html file')
+  .parse(process.argv);
+
+var dir = program.args[0];
+console.log('compiling ' + dir);
+
+doctagon(dir, program.out);
+
+console.log('output to ' + program.out)

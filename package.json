@@ -1,0 +1,29 @@
+{
+  "name": "doctagon.js",
+  "version": "0.1.0",
+  "description": "A tool for creating docs from simple markdown",
+  "keywords": [
+    "documentation",
+    "docs",
+    "doc"
+  ],
+  "maintainers": [
+    "Morgan Herlocker <morgan.herlocker@gmail.com>"
+  ],
+  "contributors": [
+    "Morgan Herlocker <morgan.herlocker@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/morganherlocker/doctagon.js/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morganherlocker/doctagon.js.git"
+  }
+}
