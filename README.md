@@ -11,16 +11,16 @@ Use a simple document structure of files and folders. The text in the files is m
 Here is a sample doctagon directory structure:
 
 +test
-	+intro
-		welcome to hugwartz.rm
-		finding a wand.rm
-		hello muggles.rm
-	+starting out
-		simple spell.rm
-		novice spell.rm
-	+advanced.rm
-		magic.rm
-		black magic.rm
+    +intro
+        welcome to hugwartz.rm
+        finding a wand.rm
+        hello muggles.rm
+    +starting out
+        simple spell.rm
+        novice spell.rm
+    +advanced.rm
+        magic.rm
+        black magic.rm
 
 
 
