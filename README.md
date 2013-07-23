@@ -1,5 +1,6 @@
 doctagon.js
 ===========
+Note: this project is in development
 
 A node.js tool for creating docs from simple markdown.
 
