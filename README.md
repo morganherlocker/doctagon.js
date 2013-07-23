@@ -24,5 +24,6 @@ Here is a sample doctagon directory structure:
             2-black magic.markdown
     
 **Running tests**
+
     cd test & sh watch_tests
 
