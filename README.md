@@ -1,5 +1,6 @@
 doctagon.js
 ===========
+
 **Note: this project is in development**
 
 A node.js tool for creating docs from simple markdown.
@@ -27,3 +28,4 @@ Here is a sample doctagon directory structure:
 
     cd test & sh tests
 
+[site](http://morganherlocker.github.io/doctagon.js)
