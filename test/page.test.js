@@ -2,7 +2,7 @@ var should = require('should')
   ,fs = require('fs')
   ,cheerio = require('cheerio')
   ,doctagon = require('../')
-  ,dir = './example/magic'
+  ,dir = '../example/magic'
   ,out = './magic_help.html'
   ,$;
 
