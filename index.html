@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Doctagon.js by morganherlocker</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Doctagon.js</h1>
+        <p>A node.js tool for creating docs from simple markdown.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/morganherlocker/doctagon.js" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/morganherlocker/doctagon.js/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/morganherlocker/doctagon.js/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p>A node.js tool for creating docs from simple markdown.</p>
+
+<p>Use a simple document structure of files and folders. The text in the files is markdown. To compile the docs down to a simple html file, just use:</p>
+
+<pre><code>doctagon magic -o magic_help.html
+</code></pre>
+
+<p>Here is a sample doctagon directory structure:</p>
+
+<pre><code>+magic
+    +1-intro
+        1-welcome to hugwartz.markdown
+        2-finding a wand.markdown
+        3-hello muggles.markdown
+    +2-starting out
+        1-simple spell.markdown
+        2-novice spell.markdown
+    +3-advanced.markdown
+        1-magic.markdown
+        2-black magic.markdown
+</code></pre>
+
+<p><strong>Running tests</strong></p>
+
+<pre><code>cd test &amp; sh tests
+</code></pre>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/morganherlocker">morganherlocker</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
