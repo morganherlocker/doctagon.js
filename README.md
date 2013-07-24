@@ -28,4 +28,4 @@ Here is a sample doctagon directory structure:
 
     cd test & sh tests
 
-[site](http://morganherlocker.github.io/doctagon.js)
+[pages site](http://morganherlocker.github.io/doctagon.js)
