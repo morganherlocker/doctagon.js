@@ -20,7 +20,7 @@ fs.readFile(out, function (err, html) {
   });
   describe('content', function(){
     it('should have a paragraph in the welcome section', function(){
-      throw -1;    
+      throw -1;
     });
   });
 });

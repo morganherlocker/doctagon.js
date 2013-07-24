@@ -25,5 +25,5 @@ Here is a sample doctagon directory structure:
     
 **Running tests**
 
-    cd test & sh watch_tests
+    cd test & sh tests
 

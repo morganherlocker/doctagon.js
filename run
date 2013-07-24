@@ -1,0 +1,2 @@
+
+bin/doctagon ./example/magic -o ./example/magic_help.html
