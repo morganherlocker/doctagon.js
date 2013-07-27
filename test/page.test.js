@@ -8,11 +8,12 @@ var should = require('should')
 
 describe('html', function(){
   before(function(done){
-    doctagon(dir, out);
-    fs.readFile(out, function (err, html) {
-      if (err) throw err;
-      $ = cheerio.load(html)
-      done();
+    doctagon(dir, out, function(){
+      fs.readFile(out, function (err, html) {
+        if (err) throw err;
+        $ = cheerio.load(html)
+        done();
+      });
     });
   });
   it('should have a title tag with "magic"', function(){

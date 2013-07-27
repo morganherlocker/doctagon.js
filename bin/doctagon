@@ -11,6 +11,7 @@ program
 var dir = program.args[0];
 console.log('compiling ' + dir);
 
-doctagon(dir, program.out);
+doctagon(dir, program.out, function(){
+  console.log('output to ' + program.out)
+});
 
-console.log('output to ' + program.out)

@@ -9,18 +9,19 @@ var dir = '../example/magic'
 
 describe('table of contents', function(){
   before(function(done){
-    doctagon(dir, out);
-    fs.readFile(out, function (err, html) {
-      if (err) throw err;
-      $ = cheerio.load(html)
-      done();
+    doctagon(dir, out, function(){
+      fs.readFile(out, function (err, html) {
+        if (err) throw err;
+        $ = cheerio.load(html)
+        done();
+      });
     });
   });
   it('should have a "welcome to hugwartz" section in the toc', function(){
-    throw -1;
+    $('a').attr('href', 'welcometohugwartz').html().should.exist;
   });
   it('should have a "hello muggle" section in the toc', function(){
-    throw -1;
+    throw 'not implemented';
   });
   after(function(done){
     fs.unlink(out, function(err){
