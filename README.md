@@ -14,7 +14,7 @@ Here is a sample doctagon directory structure:
 
     +magic
         +1-intro
-            1-welcome to hugwartz.md
+            1-welcome.md
             2-finding a wand.md
             3-hello muggles.md
         +2-starting out
