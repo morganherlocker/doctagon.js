@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 var program = require('commander'),
-  doctagon = require('../');
+  doctagon = require('../').doctagon;
 
 program
   .version('0.1')
-  .option('-o --out [type]', 'path of the output html file')
+  .option('-o --out [path]', 'path of the output directory')
   .parse(process.argv);
 
 var dir = program.args[0];
