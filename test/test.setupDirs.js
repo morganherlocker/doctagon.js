@@ -1,8 +1,8 @@
 var should = require('should')
   ,fs = require('fs-extra')
   ,doctagon = require('../')
-  ,dir = '../example/magic'
-  ,out = './magic';
+  ,dir = './example/magic'
+  ,out = './test/magic';
 
 describe('setupDirs', function() {
   before(function(done){

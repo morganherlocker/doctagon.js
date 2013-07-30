@@ -1,10 +1,11 @@
-var fs = require('fs')
+var fs = require('fs-extra')
   ,path = require('path')
   ,cheerio = require('cheerio')
   ,markdown = require('markdown').markdown
   ,walkdir = require('walkdir')
   ,async = require('async')
-  ,jade = require('jade');
+  ,jade = require('jade')
+  ,jadeFile = './index.jade';
 
 exports.doctagon = function(dir, out, complete) {
   async.series([
@@ -30,32 +31,35 @@ exports.doctagon = function(dir, out, complete) {
 
 var setupDirs = exports.setupDirs = function(dir, out, done) {
   projectName = path.basename(dir);
-  fs.mkdir(out, function(err){
-    if(err) throw err 
-    async.parallel([
-      function(callback){
-        fs.mkdir(out+'/css', function(){
-          callback();
-        });
-      },
-      function(callback){
-        fs.mkdir(out+'/js', function(){
-          callback();
-        });
-      },
-      function(callback){
-        fs.mkdir(out+'/img', function(){
-          callback();
-        });
-      },
-      function(callback){
-        fs.mkdir(out+'/vid', function(){
-          callback();
-        });
-      }
-    ], function(err, results) {
-      if(err) throw err;
-      done();
+  fs.remove(out, function(err){
+    if(err) throw err;
+    fs.mkdir(out, function(err){
+      if(err) throw err; 
+      async.parallel([
+        function(callback){
+          fs.mkdir(out+'/css', function(){
+            callback();
+          });
+        },
+        function(callback){
+          fs.mkdir(out+'/js', function(){
+            callback();
+          });
+        },
+        function(callback){
+          fs.mkdir(out+'/img', function(){
+            callback();
+          });
+        },
+        function(callback){
+          fs.mkdir(out+'/vid', function(){
+            callback();
+          });
+        }
+      ], function(err, results) {
+        if(err) throw err;
+        done();
+      });
     });
   });
 }
@@ -89,7 +93,7 @@ var createDoc = exports.createDoc = function(dir, done) {
 }
 
 var renderDoc = exports.renderDoc = function(name, doc, done) {
-  var html = jade.renderFile('../index.jade', {name: name, doc: doc});
+  var html = jade.renderFile(jadeFile, {name: name, doc: doc});
   done(html);
 }
 

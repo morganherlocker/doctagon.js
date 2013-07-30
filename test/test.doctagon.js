@@ -2,8 +2,8 @@ var should = require('should')
   ,fs = require('fs-extra')
   ,cheerio = require('cheerio')
   ,doctagon = require('../')
-  ,dir = '../example/magic'
-  ,out = './magic'
+  ,dir = './example/magic'
+  ,out = './test/magic'
   ,name = 'magic';
 
 describe('doctagon', function() {

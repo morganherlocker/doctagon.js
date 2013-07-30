@@ -1,6 +1,6 @@
 var should = require('should')
   ,doctagon = require('../')
-  ,dir = '../example/magic'; 
+  ,dir = './example/magic'; 
 
 var doc;
 
