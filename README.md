@@ -14,15 +14,15 @@ Here is a sample doctagon directory structure:
 
     +magic
         +1-intro
-            1-welcome to hugwartz.markdown
-            2-finding a wand.markdown
-            3-hello muggles.markdown
+            1-welcome to hugwartz.md
+            2-finding a wand.md
+            3-hello muggles.md
         +2-starting out
-            1-simple spell.markdown
-            2-novice spell.markdown
-        +3-advanced.markdown
-            1-magic.markdown
-            2-black magic.markdown
+            1-simple spell.md
+            2-novice spell.md
+        +3-advanced
+            1-magic.md
+            2-black magic.md
     
 **Running tests**
 
