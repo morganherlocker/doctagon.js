@@ -5,7 +5,7 @@ var fs = require('fs-extra')
   ,walkdir = require('walkdir')
   ,async = require('async')
   ,jade = require('jade')
-  ,jadeFile = './index.jade';
+  ,jadeFile = __dirname+'/index.jade';
 
 exports.doctagon = function(dir, out, complete) {
   async.series([
