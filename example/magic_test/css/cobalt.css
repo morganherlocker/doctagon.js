@@ -27,10 +27,10 @@ hr {
     height: 1px;
     margin: 20px 0;
 }
-#content {
+#container {
   position: relative;
 }
-#body {
+#background {
   position: fixed;
   top: 0; left: 525px; right: 0; bottom: 0;
   background: #f5f5ff;

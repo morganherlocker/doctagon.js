@@ -6,9 +6,9 @@ doctagon.js
 A node.js tool for creating docs from simple markdown.
 
 
-Use a simple document structure of files and folders. The text in the files is markdown. To compile the docs down to a simple html file, just use:
+Use a simple document structure of files and folders. The text in the files is markdown. To compile the docs, just use:
 
-    doctagon magic -o magic_help.html
+    bin/doctagon ./example/magic -o ./example/magic_test
 
 Here is a sample doctagon directory structure:
 
@@ -26,6 +26,6 @@ Here is a sample doctagon directory structure:
     
 **Running tests**
 
-    cd test & sh tests
+    mocha test
 
 [pages site](http://morganherlocker.github.io/doctagon.js)

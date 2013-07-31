@@ -10,32 +10,44 @@ describe('setupDirs', function() {
       done();
     });
   });
-  it('should have a root directory "magic"', function(done) {
+  it('should create a root directory "magic"', function(done) {
     fs.exists(out, function(exists){
       exists.should.be.true;
       done();
     });
   });
-  it('should have a directory "css"', function(done) {
+  it('should create a directory "css"', function(done) {
     fs.exists(out + '/css', function(exists){
       exists.should.be.true;
       done();
     });
   });
-  it('should have a root directory "js"', function(done) {
+  it('should create a root directory "js"', function(done) {
     fs.exists(out + '/js', function(exists){
       exists.should.be.true;
       done();
     });
   });
-  it('should have a root directory "vid"', function(done) {
+  it('should create a root directory "vid"', function(done) {
     fs.exists(out + '/vid', function(exists){
       exists.should.be.true;
       done();
     });
   });
-  it('should have a root directory "img"', function(done) {
+  it('should create a root directory "img"', function(done) {
     fs.exists(out + '/img', function(exists){
+      exists.should.be.true;
+      done();
+    });
+  });
+  it('should create a doctagon.css file', function(done){
+    fs.exists(out + '/css/doctagon.css', function(exists){
+      exists.should.be.true;
+      done();
+    });
+  });
+  it('should create a bootstrap.min.css file', function(done){
+    fs.exists(out + '/css/bootstrap.min.css', function(exists){
       exists.should.be.true;
       done();
     });

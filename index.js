@@ -38,6 +38,9 @@ var setupDirs = exports.setupDirs = function(dir, out, done) {
       async.parallel([
         function(callback){
           fs.mkdir(out+'/css', function(){
+            fs.createReadStream(__dirname+'/rsc/css/cobalt.css').pipe(fs.createWriteStream(out + '/css/cobalt.css'));
+            fs.createReadStream(__dirname+'/rsc/css/doctagon.css').pipe(fs.createWriteStream(out + '/css/doctagon.css'));
+            fs.createReadStream(__dirname+'/rsc/css/bootstrap.min.css').pipe(fs.createWriteStream(out + '/css/bootstrap.min.css'));
             callback();
           });
         },
