@@ -1,8 +1,6 @@
 doctagon.js
 ===========
 
-**Note: this project is in development**
-
 A node.js tool for creating docs from simple markdown.
 
 
@@ -29,3 +27,5 @@ Here is a sample doctagon directory structure:
     mocha test
 
 [pages site](http://morganherlocker.github.io/doctagon.js)
+
+This project is available through the [MIT License](http://opensource.org/licenses/MIT)
