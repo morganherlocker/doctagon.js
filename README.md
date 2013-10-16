@@ -29,3 +29,7 @@ Here is a sample doctagon directory structure:
 [pages site](http://morganherlocker.github.io/doctagon.js)
 
 This project is available through the [MIT License](http://opensource.org/licenses/MIT)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/morganherlocker/doctagon.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
